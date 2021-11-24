@@ -6,17 +6,19 @@ using PowerDynamics: read_powergrid, Json, Inc, find_operationpoint, ChangeIniti
 
 include("buildexample_jr.jl")
 powergrid = read_powergrid(joinpath(@__DIR__,"grid_jr.json"), Json)
-operationpoint = find_operationpoint(powergrid, sol_method=:rootfind)
-operationpoint = find_operationpoint(powergrid, sol_method=:nlsolve)
-operationpoint = find_operationpoint(powergrid, sol_method=:dynamic)
+# powergrid = read_powergrid(joinpath(@__DIR__,"grid.json"), Json)
+operationpoint = find_operationpoint(powergrid, sol_method=:rootfind) # solve_powerflow=true, 
+operationpoint = find_operationpoint(powergrid, sol_method=:nlsolve) # solve_powerflow=true, 
+operationpoint = find_operationpoint(powergrid, sol_method=:dynamic) # solve_powerflow=true, 
 
 timespan= (0.0,5.)
 include("plotexample_jr.jl")
+# include("plotexample.jl")
 
 # simulating a frequency perturbation at node 1
 fault1 = ChangeInitialConditions(node="bus1", var=:ω, f=Inc(0.2));
 solution1 = simulate(fault1, powergrid, operationpoint, timespan);
-plot1 = create_plot(solution1);
+plot1 = create_plot(solution1)
 
 # simulating a tripped line between node 1 and 5
 fault2 = LineFailure(line_name="branch2", tspan_fault=(1.,5.));
@@ -42,7 +44,7 @@ include("plotexample_jr.jl")
 # simulating a frequency perturbation at node 1
 fault1 = ChangeInitialConditions(node=1, var=:ω, f=Inc(0.0));
 solution1 = simulate(fault1, powergrid, operationpoint, timespan);
-plot1 = create_plot(solution1);
+plot1 = create_plot(solution1)
 
 # simulating a tripped line between node 1 and 5
 fault2 = LineFailure(line_name="branch2", tspan_fault=(1.,5.));
