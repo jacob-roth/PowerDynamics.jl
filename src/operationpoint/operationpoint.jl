@@ -131,9 +131,9 @@ function find_operationpoint(
     if SlackAlgebraic ∉ collect(values(pg.nodes)) .|> typeof
         @warn "There is no slack bus in the system to balance powers. Currently not making any checks concerning assumptions of whether its possible to find a operation point."
     end
-    if SwingEq ∈ collect(values(pg.nodes)) .|> typeof
-        throw(OperationPointError("Found SwingEq node but these should be SwingEqLVS (just SwingEq is not yet supported for operation point search)."))
-    end
+    # if SwingEq ∈ collect(values(pg.nodes)) .|> typeof
+    #     throw(OperationPointError("Found SwingEq node but these should be SwingEqLVS (just SwingEq is not yet supported for operation point search)."))
+    # end
 
     if ic_guess === nothing
         ic_guess = initial_guess(pg)
