@@ -62,7 +62,7 @@ function opf2pd(fileout::String, optimal_values::Dict, opfmodeldata::Dict, phys:
     L["params"]["to"] = "bus" * string(tt)
     L["params"]["Y"] = Dict()
     L["params"]["Y"]["re"] = 0.0
-    L["params"]["Y"]["im"] = opfmodeldata[:Y][f, t]
+    L["params"]["Y"]["im"] = opfmodeldata[:Y][ff, tt] # or should it be [f,t]?
     L["type"] = "StaticLine"
     # L["params"]["y"]["re"] = 0.0
     # L["params"]["y"]["im"] = opfmodeldata[:Y][f, t]
