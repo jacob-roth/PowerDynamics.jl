@@ -14,20 +14,20 @@
   {
    "name": "bus2",
    "params": {
+    "Q": -0.09,
     "P": -0.2,
-    "V": 0.9937006757691712,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus3",
    "params": {
+    "Q": -0.1,
     "P": -0.39,
-    "V": 0.9901234192546294,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus4",
@@ -43,11 +43,11 @@
   {
    "name": "bus5",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 1.0034965558391304,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus6",
@@ -63,11 +63,11 @@
   {
    "name": "bus7",
    "params": {
+    "Q": -0.02,
     "P": -0.19,
-    "V": 1.0027125665443326,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus8",
@@ -83,11 +83,11 @@
   {
    "name": "bus9",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 1.0154467272472982,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus10",
@@ -103,11 +103,11 @@
   {
    "name": "bus11",
    "params": {
+    "Q": -0.23,
     "P": -0.7,
-    "V": 0.9997659931101823,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus12",
@@ -123,20 +123,20 @@
   {
    "name": "bus13",
    "params": {
+    "Q": -0.16,
     "P": -0.34,
-    "V": 0.9932133921312372,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus14",
    "params": {
+    "Q": -0.01,
     "P": -0.14,
-    "V": 1.004276656580744,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus15",
@@ -152,20 +152,20 @@
   {
    "name": "bus16",
    "params": {
+    "Q": -0.1,
     "P": -0.25,
-    "V": 1.001941595765804,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus17",
    "params": {
+    "Q": -0.03,
     "P": -0.11,
-    "V": 1.0109281927619562,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus18",
@@ -192,38 +192,38 @@
   {
    "name": "bus20",
    "params": {
+    "Q": -0.03,
     "P": -0.18,
-    "V": 0.9933848405465114,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus21",
    "params": {
+    "Q": -0.08,
     "P": -0.14,
-    "V": 0.9900844500007969,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus22",
    "params": {
+    "Q": -0.05,
     "P": -0.1,
-    "V": 0.9932350969551326,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus23",
    "params": {
+    "Q": -0.03,
     "P": -0.07,
-    "V": 1.0064757196038068,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus24",
@@ -272,29 +272,29 @@
   {
    "name": "bus28",
    "params": {
+    "Q": -0.07,
     "P": -0.17,
-    "V": 0.9982644718332625,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus29",
    "params": {
+    "Q": -0.04,
     "P": -0.24,
-    "V": 0.9990520148642236,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus30",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.9897081580884295,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus31",
@@ -321,11 +321,11 @@
   {
    "name": "bus33",
    "params": {
+    "Q": -0.09,
     "P": -0.23,
-    "V": 1.0027834727490832,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus34",
@@ -341,11 +341,11 @@
   {
    "name": "bus35",
    "params": {
+    "Q": -0.09,
     "P": -0.33,
-    "V": 1.00793024727843,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus36",
@@ -361,29 +361,29 @@
   {
    "name": "bus37",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 1.01193923279369,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus38",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.9750092834408974,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus39",
    "params": {
+    "Q": -0.11,
     "P": -0.27,
-    "V": 0.9994666798451921,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus40",
@@ -399,11 +399,11 @@
   {
    "name": "bus41",
    "params": {
+    "Q": -0.1,
     "P": -0.37,
-    "V": 0.9959872918944914,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus42",
@@ -419,29 +419,29 @@
   {
    "name": "bus43",
    "params": {
+    "Q": -0.07,
     "P": -0.18,
-    "V": 1.0055258647763854,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus44",
    "params": {
+    "Q": -0.08,
     "P": -0.16,
-    "V": 1.003503430457927,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus45",
    "params": {
+    "Q": -0.22,
     "P": -0.53,
-    "V": 0.9978890777162442,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus46",
@@ -457,20 +457,20 @@
   {
    "name": "bus47",
    "params": {
+    "Q": 0.0,
     "P": -0.34,
-    "V": 1.0064653319239103,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus48",
    "params": {
+    "Q": -0.11,
     "P": -0.2,
-    "V": 1.0079733074050583,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus49",
@@ -486,38 +486,38 @@
   {
    "name": "bus50",
    "params": {
+    "Q": -0.04,
     "P": -0.17,
-    "V": 1.003496172416257,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus51",
    "params": {
+    "Q": -0.08,
     "P": -0.17,
-    "V": 0.9951501934930175,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus52",
    "params": {
+    "Q": -0.05,
     "P": -0.18,
-    "V": 0.9932678010348064,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus53",
    "params": {
+    "Q": -0.11,
     "P": -0.23,
-    "V": 0.9923708882173128,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus54",
@@ -555,20 +555,20 @@
   {
    "name": "bus57",
    "params": {
+    "Q": -0.03,
     "P": -0.12,
-    "V": 1.0006455250711501,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus58",
    "params": {
+    "Q": -0.03,
     "P": -0.12,
-    "V": 0.9966725128792068,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus59",
@@ -584,11 +584,11 @@
   {
    "name": "bus60",
    "params": {
+    "Q": -0.03,
     "P": -0.78,
-    "V": 1.0083440114697204,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus61",
@@ -615,20 +615,20 @@
   {
    "name": "bus63",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.980209993284121,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus64",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.9893385938064925,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus65",
@@ -655,20 +655,20 @@
   {
    "name": "bus67",
    "params": {
+    "Q": -0.07,
     "P": -0.28,
-    "V": 1.0165423776551525,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus68",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.9891232424139219,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus69",
@@ -695,11 +695,11 @@
   {
    "name": "bus71",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 1.0042233831286433,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus72",
@@ -737,11 +737,11 @@
   {
    "name": "bus75",
    "params": {
+    "Q": -0.11,
     "P": -0.47,
-    "V": 0.9974016278527714,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus76",
@@ -768,20 +768,20 @@
   {
    "name": "bus78",
    "params": {
+    "Q": -0.26,
     "P": -0.71,
-    "V": 1.0148418633233554,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus79",
    "params": {
+    "Q": -0.32,
     "P": -0.39,
-    "V": 1.016291363817259,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus80",
@@ -797,38 +797,38 @@
   {
    "name": "bus81",
    "params": {
+    "Q": 0.0,
     "P": 0.0,
-    "V": 0.9834015147525008,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus82",
    "params": {
+    "Q": -0.27,
     "P": -0.54,
-    "V": 1.021903263335894,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus83",
    "params": {
+    "Q": -0.1,
     "P": -0.2,
-    "V": 1.0243777305901434,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus84",
    "params": {
+    "Q": -0.07,
     "P": -0.11,
-    "V": 1.0248176369688176,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus85",
@@ -844,11 +844,11 @@
   {
    "name": "bus86",
    "params": {
+    "Q": -0.1,
     "P": -0.21,
-    "V": 1.0201405792309608,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus87",
@@ -864,11 +864,11 @@
   {
    "name": "bus88",
    "params": {
+    "Q": -0.1,
     "P": -0.48,
-    "V": 1.0355307951665076,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus89",
@@ -917,56 +917,56 @@
   {
    "name": "bus93",
    "params": {
+    "Q": -0.07,
     "P": -0.12,
-    "V": 1.0287067473180826,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus94",
    "params": {
+    "Q": -0.16,
     "P": -0.3,
-    "V": 1.0247085302520451,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus95",
    "params": {
+    "Q": -0.31,
     "P": -0.42,
-    "V": 1.0154502609079425,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus96",
    "params": {
+    "Q": -0.15,
     "P": -0.38,
-    "V": 1.0199541029489914,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus97",
    "params": {
+    "Q": -0.09,
     "P": -0.15,
-    "V": 1.0210535007409203,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus98",
    "params": {
+    "Q": -0.08,
     "P": -0.34,
-    "V": 1.02920165038138,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus99",
@@ -993,20 +993,20 @@
   {
    "name": "bus101",
    "params": {
+    "Q": -0.15,
     "P": -0.22,
-    "V": 1.0292775343422609,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus102",
    "params": {
+    "Q": -0.03,
     "P": -0.05,
-    "V": 1.0350971266649394,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus103",
@@ -1044,11 +1044,11 @@
   {
    "name": "bus106",
    "params": {
+    "Q": -0.16,
     "P": -0.43,
-    "V": 1.0083446169540948,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus107",
@@ -1064,20 +1064,20 @@
   {
    "name": "bus108",
    "params": {
+    "Q": -0.01,
     "P": -0.02,
-    "V": 1.007992367079034,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus109",
    "params": {
+    "Q": -0.03,
     "P": -0.08,
-    "V": 1.006572982325667,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus110",
@@ -1126,20 +1126,20 @@
   {
    "name": "bus114",
    "params": {
+    "Q": -0.03,
     "P": -0.08,
-    "V": 0.9995339476823666,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus115",
    "params": {
+    "Q": -0.07,
     "P": -0.22,
-    "V": 0.9993009260781793,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus116",
@@ -1155,20 +1155,20 @@
   {
    "name": "bus117",
    "params": {
+    "Q": -0.08,
     "P": -0.2,
-    "V": 0.9943440650467672,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   },
   {
    "name": "bus118",
    "params": {
+    "Q": -0.15,
     "P": -0.33,
-    "V": 0.9878711512896323,
     "Y_n": 0.0
    },
-   "type": "PVAlgebraic"
+   "type": "PQAlgebraic"
   }
  ],
  "lines": [
@@ -1953,30 +1953,6 @@
    "type": "StaticLine"
   },
   {
-   "name": "branch66",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 6.191950464396284
-    },
-    "to": "bus49",
-    "from": "bus42"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch67",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 6.191950464396284
-    },
-    "to": "bus49",
-    "from": "bus42"
-   },
-   "type": "StaticLine"
-  },
-  {
    "name": "branch68",
    "params": {
     "Y": {
@@ -2057,30 +2033,6 @@
     },
     "to": "bus54",
     "from": "bus53"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch75",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 6.896633729295235
-    },
-    "to": "bus54",
-    "from": "bus49"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch76",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 6.896633729295235
-    },
-    "to": "bus54",
-    "from": "bus49"
    },
    "type": "StaticLine"
   },
@@ -2177,30 +2129,6 @@
     },
     "to": "bus59",
     "from": "bus54"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch85",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 8.168164163429962
-    },
-    "to": "bus59",
-    "from": "bus56"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch86",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 8.168164163429962
-    },
-    "to": "bus59",
-    "from": "bus56"
    },
    "type": "StaticLine"
   },
@@ -2333,30 +2261,6 @@
     },
     "to": "bus65",
     "from": "bus64"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch98",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 21.762785636561482
-    },
-    "to": "bus66",
-    "from": "bus49"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch99",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 21.762785636561482
-    },
-    "to": "bus66",
-    "from": "bus49"
    },
    "type": "StaticLine"
   },
@@ -2637,30 +2541,6 @@
    "type": "StaticLine"
   },
   {
-   "name": "branch123",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 30.14236622484045
-    },
-    "to": "bus80",
-    "from": "bus77"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch124",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 30.14236622484045
-    },
-    "to": "bus80",
-    "from": "bus77"
-   },
-   "type": "StaticLine"
-  },
-  {
    "name": "branch125",
    "params": {
     "Y": {
@@ -2817,30 +2697,6 @@
    "type": "StaticLine"
   },
   {
-   "name": "branch138",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 15.349239206982649
-    },
-    "to": "bus90",
-    "from": "bus89"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch139",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 15.349239206982649
-    },
-    "to": "bus90",
-    "from": "bus89"
-   },
-   "type": "StaticLine"
-  },
-  {
    "name": "branch140",
    "params": {
     "Y": {
@@ -2849,30 +2705,6 @@
     },
     "to": "bus91",
     "from": "bus90"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch141",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 26.127090887456866
-    },
-    "to": "bus92",
-    "from": "bus89"
-   },
-   "type": "StaticLine"
-  },
-  {
-   "name": "branch142",
-   "params": {
-    "Y": {
-     "re": 0.0,
-     "im": 26.127090887456866
-    },
-    "to": "bus92",
-    "from": "bus89"
    },
    "type": "StaticLine"
   },
