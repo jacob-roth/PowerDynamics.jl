@@ -13,7 +13,6 @@ include("common/PowerGridSolutions.jl")
 
 include("parsers/Format.jl")
 include("parsers/JsonParser.jl")
-include("parsers/OPF2PD.jl") # opf 2 power dynamics parser
 
 # all possible node dynamics
 include("nodes/controller/PIControl.jl")
@@ -84,9 +83,6 @@ export rhs
 export systemsize
 export symbolsof
 export total_current
-
-# json parsing for OPF stuff
-export opf2pd
 
 
 end
