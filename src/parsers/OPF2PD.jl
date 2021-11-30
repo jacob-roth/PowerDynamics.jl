@@ -22,14 +22,14 @@ function opf2pd(fileout::String, optimal_values::Dict, opfmodeldata::Dict, phys:
     B["params"]["Y_n"] = 0.0 # not sure why but https://github.com/jacob-roth/PowerDynamics.jl/blob/main/examples/ieee14bus/grid.json has this for all nodes
 
     # slack
-    if opfmodeldata[:buses][1].bustype == 1
+    if opfmodeldata[:buses][i].bustype == 3
       V = optimal_values[:Vm][i]
       theta = optimal_values[:Va][i]
       B["params"]["U"] = V * exp(im * theta)
       B["type"] = "SlackAlgebraic"
 
-      # generator
-    elseif opfmodeldata[:buses][1].bustype == 2
+    # generator
+    elseif opfmodeldata[:buses][i].bustype == 2
       B["params"]["P"] = optimal_values[:Pnet][i]
       B["params"]["Q"] = optimal_values[:Qnet][i]
       B["params"]["V"] = optimal_values[:Vm][i]
@@ -38,8 +38,8 @@ function opf2pd(fileout::String, optimal_values::Dict, opfmodeldata::Dict, phys:
       B["params"]["Ω"] = phys[:Ω]
       B["type"] = "SwingEq"
 
-      # load
-    elseif opfmodeldata[:buses][1].bustype == 3
+    # load
+    elseif opfmodeldata[:buses][i].bustype == 1
       B["params"]["P"] = optimal_values[:Pnet][i]
       B["params"]["V"] = optimal_values[:Vm][i]
       B["type"] = "PVAlgebraic"
