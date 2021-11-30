@@ -31,8 +31,8 @@ function opf2pd(fileout::String, optimal_values::Dict, opfmodeldata::Dict, phys:
     # generator
     elseif opfmodeldata[:buses][i].bustype == 2
       B["params"]["P"] = optimal_values[:Pnet][i]
-      B["params"]["Q"] = optimal_values[:Qnet][i]
-      B["params"]["V"] = optimal_values[:Vm][i]
+      # B["params"]["Q"] = optimal_values[:Qnet][i]
+      # B["params"]["V"] = optimal_values[:Vm][i]
       B["params"]["H"] = phys[:H]
       B["params"]["D"] = phys[:Dg]
       B["params"]["Ω"] = phys[:Ω]
@@ -53,11 +53,13 @@ function opf2pd(fileout::String, optimal_values::Dict, opfmodeldata::Dict, phys:
   for l = 1:nline
     f = opfmodeldata[:lines][l].from
     t = opfmodeldata[:lines][l].to
+    ff = min(f,t) # need to have from.id <= to.id for PD lightgraphs dependency
+    tt = max(f,t) # need to have from.id <= to.id for PD lightgraphs dependency
     L = Dict()
     L["name"] = "branch" * string(l)
     L["params"] = Dict()
-    L["params"]["from"] = "bus" * string(f)
-    L["params"]["to"] = "bus" * string(t)
+    L["params"]["from"] = "bus" * string(ff)
+    L["params"]["to"] = "bus" * string(tt)
     L["params"]["Y"] = Dict()
     L["params"]["Y"]["re"] = 0.0
     L["params"]["Y"]["im"] = opfmodeldata[:Y][f, t]
