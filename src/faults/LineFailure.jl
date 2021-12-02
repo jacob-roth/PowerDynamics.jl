@@ -7,6 +7,7 @@ function filter_lines(lines::Array, line_name)
     copy(lines[1:end.!=line_name])
 end
 
+## NEW
 function filter_multiple_lines(lines::OrderedDict, line_names)
     OrderedDict(k => v for (k, v) in lines if k ∉ line_names)
 end
@@ -14,6 +15,7 @@ end
 function filter_multiple_lines(lines::Array, line_names)
     copy(lines[1:end.∉line_names])
 end
+## NEW
 
 ## LineFault -> deprecation
 
@@ -51,6 +53,7 @@ function simulate(lf::LineFault, x0::State; timespan)
     solve(lf(x0.grid), x0.vec, timespan)
 end
 
+## NEW
 function simulate(lfs::LineFailures, powergrid, x0; timespan)
     solve(lfs(powergrid), x0, timespan)
 end
@@ -58,6 +61,7 @@ end
 function simulate(lfs::LineFailures, x0::State; timespan)
     solve(lfs(x0.grid), x0.vec, timespan)
 end
+## NEW
 
 ## LineFailure
 
@@ -80,6 +84,7 @@ function (lf::LineFailure)(powergrid)
     PowerGrid(powergrid.nodes, filtered_lines)
 end
 
+## NEW
 struct LineFailures <: AbstractPerturbation
     line_names::Any
     tspan_fault::Any
@@ -88,10 +93,10 @@ struct LineFailures <: AbstractPerturbation
 end
 
 function (lfs::LineFailures)(powergrid)
-    filtered_lines = filter_multiple_lines(powergrid.lines, lf.line_names)
+    filtered_lines = filter_multiple_lines(copy(powergrid.lines), lfs.line_names)
     PowerGrid(powergrid.nodes, filtered_lines)
 end
-
+## NEW
 
 
 export LineFault
