@@ -1,0 +1,4754 @@
+{
+ "nodes": [
+  {
+   "name": "bus1",
+   "params": {
+    "P": -0.51,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus2",
+   "params": {
+    "Q": -0.09,
+    "P": -0.2,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus3",
+   "params": {
+    "Q": -0.1,
+    "P": -0.39,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus4",
+   "params": {
+    "P": -0.39,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus5",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus6",
+   "params": {
+    "P": -0.52,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus7",
+   "params": {
+    "Q": -0.02,
+    "P": -0.19,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus8",
+   "params": {
+    "P": -0.28,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus9",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus10",
+   "params": {
+    "P": 4.360807912235039,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus11",
+   "params": {
+    "Q": -0.23,
+    "P": -0.7,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus12",
+   "params": {
+    "P": 0.3537080706192599,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus13",
+   "params": {
+    "Q": -0.16,
+    "P": -0.34,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus14",
+   "params": {
+    "Q": -0.01,
+    "P": -0.14,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus15",
+   "params": {
+    "P": -0.9,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus16",
+   "params": {
+    "Q": -0.1,
+    "P": -0.25,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus17",
+   "params": {
+    "Q": -0.03,
+    "P": -0.11,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus18",
+   "params": {
+    "P": -0.6,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus19",
+   "params": {
+    "P": -0.45,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus20",
+   "params": {
+    "Q": -0.03,
+    "P": -0.18,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus21",
+   "params": {
+    "Q": -0.08,
+    "P": -0.14,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus22",
+   "params": {
+    "Q": -0.05,
+    "P": -0.1,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus23",
+   "params": {
+    "Q": -0.03,
+    "P": -0.07,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus24",
+   "params": {
+    "P": -0.13,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus25",
+   "params": {
+    "P": 2.131950108441893,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus26",
+   "params": {
+    "P": 3.0428749090413127,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus27",
+   "params": {
+    "P": -0.71,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus28",
+   "params": {
+    "Q": -0.07,
+    "P": -0.17,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus29",
+   "params": {
+    "Q": -0.04,
+    "P": -0.24,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus30",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus31",
+   "params": {
+    "P": -0.3621652170915193,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus32",
+   "params": {
+    "P": -0.59,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus33",
+   "params": {
+    "Q": -0.09,
+    "P": -0.23,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus34",
+   "params": {
+    "P": -0.59,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus35",
+   "params": {
+    "Q": -0.09,
+    "P": -0.33,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus36",
+   "params": {
+    "P": -0.31,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus37",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus38",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus39",
+   "params": {
+    "Q": -0.11,
+    "P": -0.27,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus40",
+   "params": {
+    "P": -0.66,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus41",
+   "params": {
+    "Q": -0.1,
+    "P": -0.37,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus42",
+   "params": {
+    "P": -0.96,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus43",
+   "params": {
+    "Q": -0.07,
+    "P": -0.18,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus44",
+   "params": {
+    "Q": -0.08,
+    "P": -0.16,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus45",
+   "params": {
+    "Q": -0.22,
+    "P": -0.53,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus46",
+   "params": {
+    "P": -0.09587701784361469,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus47",
+   "params": {
+    "Q": 0.0,
+    "P": -0.34,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus48",
+   "params": {
+    "Q": -0.11,
+    "P": -0.2,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus49",
+   "params": {
+    "P": 1.10689930221971,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus50",
+   "params": {
+    "Q": -0.04,
+    "P": -0.17,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus51",
+   "params": {
+    "Q": -0.08,
+    "P": -0.17,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus52",
+   "params": {
+    "Q": -0.05,
+    "P": -0.18,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus53",
+   "params": {
+    "Q": -0.11,
+    "P": -0.23,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus54",
+   "params": {
+    "P": -0.6648471950839899,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus55",
+   "params": {
+    "P": -0.63,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus56",
+   "params": {
+    "P": -0.84,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus57",
+   "params": {
+    "Q": -0.03,
+    "P": -0.12,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus58",
+   "params": {
+    "Q": -0.03,
+    "P": -0.12,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus59",
+   "params": {
+    "P": -1.26794411406352,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus60",
+   "params": {
+    "Q": -0.03,
+    "P": -0.78,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus61",
+   "params": {
+    "P": 1.5505093248571349,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus62",
+   "params": {
+    "P": -0.77,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus63",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus64",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus65",
+   "params": {
+    "P": 3.7890568026424734,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus66",
+   "params": {
+    "P": 3.40874845367055,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus67",
+   "params": {
+    "Q": -0.07,
+    "P": -0.28,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus68",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus69",
+   "params": {
+    "U": 1.0132474493416626,
+    "Y_n": 0.0
+   },
+   "type": "SlackAlgebraic"
+  },
+  {
+   "name": "bus70",
+   "params": {
+    "P": -0.66,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus71",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus72",
+   "params": {
+    "P": -0.12,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus73",
+   "params": {
+    "P": -0.06,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus74",
+   "params": {
+    "P": -0.68,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus75",
+   "params": {
+    "Q": -0.11,
+    "P": -0.47,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus76",
+   "params": {
+    "P": -0.68,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus77",
+   "params": {
+    "P": -0.61,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus78",
+   "params": {
+    "Q": -0.26,
+    "P": -0.71,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus79",
+   "params": {
+    "Q": -0.32,
+    "P": -0.39,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus80",
+   "params": {
+    "P": 3.3224560542467607,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus81",
+   "params": {
+    "Q": 0.0,
+    "P": 0.0,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus82",
+   "params": {
+    "Q": -0.27,
+    "P": -0.54,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus83",
+   "params": {
+    "Q": -0.1,
+    "P": -0.2,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus84",
+   "params": {
+    "Q": -0.07,
+    "P": -0.11,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus85",
+   "params": {
+    "P": -0.24,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus86",
+   "params": {
+    "Q": -0.1,
+    "P": -0.21,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus87",
+   "params": {
+    "P": 0.03876273307781323,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus88",
+   "params": {
+    "Q": -0.1,
+    "P": -0.48,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus89",
+   "params": {
+    "P": 5.882246373021061,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus90",
+   "params": {
+    "P": -1.63,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus91",
+   "params": {
+    "P": -0.1,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus92",
+   "params": {
+    "P": -0.65,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus93",
+   "params": {
+    "Q": -0.07,
+    "P": -0.12,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus94",
+   "params": {
+    "Q": -0.16,
+    "P": -0.3,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus95",
+   "params": {
+    "Q": -0.31,
+    "P": -0.42,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus96",
+   "params": {
+    "Q": -0.15,
+    "P": -0.38,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus97",
+   "params": {
+    "Q": -0.09,
+    "P": -0.15,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus98",
+   "params": {
+    "Q": -0.08,
+    "P": -0.34,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus99",
+   "params": {
+    "P": -0.42,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus100",
+   "params": {
+    "P": 2.0720521680842445,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus101",
+   "params": {
+    "Q": -0.15,
+    "P": -0.22,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus102",
+   "params": {
+    "Q": -0.03,
+    "P": -0.05,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus103",
+   "params": {
+    "P": 0.15762733138951754,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus104",
+   "params": {
+    "P": -0.38,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus105",
+   "params": {
+    "P": -0.31,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus106",
+   "params": {
+    "Q": -0.16,
+    "P": -0.43,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus107",
+   "params": {
+    "P": -0.5,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus108",
+   "params": {
+    "Q": -0.01,
+    "P": -0.02,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus109",
+   "params": {
+    "Q": -0.03,
+    "P": -0.08,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus110",
+   "params": {
+    "P": -0.39,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus111",
+   "params": {
+    "P": 0.3488645954623101,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus112",
+   "params": {
+    "P": -0.68,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus113",
+   "params": {
+    "P": -0.06,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus114",
+   "params": {
+    "Q": -0.03,
+    "P": -0.08,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus115",
+   "params": {
+    "Q": -0.07,
+    "P": -0.22,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus116",
+   "params": {
+    "P": -1.84,
+    "Y_n": 0.0,
+    "D": 0.05,
+    "H": 8.3409284952809,
+    "Ω": 314.1592653589793
+   },
+   "type": "SwingEq"
+  },
+  {
+   "name": "bus117",
+   "params": {
+    "Q": -0.08,
+    "P": -0.2,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  },
+  {
+   "name": "bus118",
+   "params": {
+    "Q": -0.15,
+    "P": -0.33,
+    "Y_n": 0.0
+   },
+   "type": "PQAlgebraic"
+  }
+ ],
+ "lines": [
+  {
+   "name": "branch1",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus2",
+    "from": "bus1",
+    "y": {
+     "re": 0.0,
+     "im": -10.01001001001001
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch2",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus3",
+    "from": "bus1",
+    "y": {
+     "re": 0.0,
+     "im": -23.58490566037736
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch3",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": -0.4
+    },
+    "to": "bus5",
+    "from": "bus4",
+    "y": {
+     "re": 0.0,
+     "im": -125.31328320802007
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch4",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": -0.4
+    },
+    "to": "bus5",
+    "from": "bus3",
+    "y": {
+     "re": 0.0,
+     "im": -9.25925925925926
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch5",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.4
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus6",
+    "from": "bus5",
+    "y": {
+     "re": 0.0,
+     "im": -18.51851851851852
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch6",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus7",
+    "from": "bus6",
+    "y": {
+     "re": 0.0,
+     "im": -48.07692307692308
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch7",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus9",
+    "from": "bus8",
+    "y": {
+     "re": 0.0,
+     "im": -32.78688524590164
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch8",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.4
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus8",
+    "from": "bus5",
+    "y": {
+     "re": 0.0,
+     "im": -37.45318352059925
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch9",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus10",
+    "from": "bus9",
+    "y": {
+     "re": 0.0,
+     "im": -31.055900621118013
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch10",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus11",
+    "from": "bus4",
+    "y": {
+     "re": 0.0,
+     "im": -14.534883720930232
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch11",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.4
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus11",
+    "from": "bus5",
+    "y": {
+     "re": 0.0,
+     "im": -14.66275659824047
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch12",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus12",
+    "from": "bus11",
+    "y": {
+     "re": 0.0,
+     "im": -51.02040816326531
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch13",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus12",
+    "from": "bus2",
+    "y": {
+     "re": 0.0,
+     "im": -16.233766233766232
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch14",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus12",
+    "from": "bus3",
+    "y": {
+     "re": 0.0,
+     "im": -6.25
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch15",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus12",
+    "from": "bus7",
+    "y": {
+     "re": 0.0,
+     "im": -29.41176470588235
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch16",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus13",
+    "from": "bus11",
+    "y": {
+     "re": 0.0,
+     "im": -13.679890560875513
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch17",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus14",
+    "from": "bus12",
+    "y": {
+     "re": 0.0,
+     "im": -14.144271570014144
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch18",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus15",
+    "from": "bus13",
+    "y": {
+     "re": 0.0,
+     "im": -4.091653027823241
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch19",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus15",
+    "from": "bus14",
+    "y": {
+     "re": 0.0,
+     "im": -5.128205128205128
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch20",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus16",
+    "from": "bus12",
+    "y": {
+     "re": 0.0,
+     "im": -11.990407673860911
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch21",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus17",
+    "from": "bus15",
+    "y": {
+     "re": 0.0,
+     "im": -22.88329519450801
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch22",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus17",
+    "from": "bus16",
+    "y": {
+     "re": 0.0,
+     "im": -5.5524708495280395
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch23",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus18",
+    "from": "bus17",
+    "y": {
+     "re": 0.0,
+     "im": -19.801980198019802
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch24",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus19",
+    "from": "bus18",
+    "y": {
+     "re": 0.0,
+     "im": -20.28397565922921
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch25",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus20",
+    "from": "bus19",
+    "y": {
+     "re": 0.0,
+     "im": -8.547008547008547
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch26",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus19",
+    "from": "bus15",
+    "y": {
+     "re": 0.0,
+     "im": -25.38071065989848
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch27",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus21",
+    "from": "bus20",
+    "y": {
+     "re": 0.0,
+     "im": -11.778563015312132
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch28",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus22",
+    "from": "bus21",
+    "y": {
+     "re": 0.0,
+     "im": -10.309278350515463
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch29",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus23",
+    "from": "bus22",
+    "y": {
+     "re": 0.0,
+     "im": -6.289308176100628
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch30",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus24",
+    "from": "bus23",
+    "y": {
+     "re": 0.0,
+     "im": -20.32520325203252
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch31",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus25",
+    "from": "bus23",
+    "y": {
+     "re": 0.0,
+     "im": -12.5
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch32",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus26",
+    "from": "bus25",
+    "y": {
+     "re": 0.0,
+     "im": -26.17801047120419
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch33",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus27",
+    "from": "bus25",
+    "y": {
+     "re": 0.0,
+     "im": -6.134969325153374
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch34",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus28",
+    "from": "bus27",
+    "y": {
+     "re": 0.0,
+     "im": -11.695906432748536
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch35",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus29",
+    "from": "bus28",
+    "y": {
+     "re": 0.0,
+     "im": -10.604453870625663
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch36",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus30",
+    "from": "bus17",
+    "y": {
+     "re": 0.0,
+     "im": -25.77319587628866
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch37",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus30",
+    "from": "bus8",
+    "y": {
+     "re": 0.0,
+     "im": -19.841269841269842
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch38",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus30",
+    "from": "bus26",
+    "y": {
+     "re": 0.0,
+     "im": -11.627906976744187
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch39",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus31",
+    "from": "bus17",
+    "y": {
+     "re": 0.0,
+     "im": -6.397952655150352
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch40",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus31",
+    "from": "bus29",
+    "y": {
+     "re": 0.0,
+     "im": -30.211480362537767
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch41",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus32",
+    "from": "bus23",
+    "y": {
+     "re": 0.0,
+     "im": -8.673026886383347
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch42",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus32",
+    "from": "bus31",
+    "y": {
+     "re": 0.0,
+     "im": -10.152284263959391
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch43",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus32",
+    "from": "bus27",
+    "y": {
+     "re": 0.0,
+     "im": -13.245033112582782
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch44",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus33",
+    "from": "bus15",
+    "y": {
+     "re": 0.0,
+     "im": -8.038585209003216
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch45",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.14
+    },
+    "to": "bus34",
+    "from": "bus19",
+    "y": {
+     "re": 0.0,
+     "im": -4.048582995951417
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch46",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus36",
+    "from": "bus35",
+    "y": {
+     "re": 0.0,
+     "im": -98.0392156862745
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch47",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "to": "bus37",
+    "from": "bus35",
+    "y": {
+     "re": 0.0,
+     "im": -20.120724346076457
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch48",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "to": "bus37",
+    "from": "bus33",
+    "y": {
+     "re": 0.0,
+     "im": -7.042253521126761
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch49",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.14
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus36",
+    "from": "bus34",
+    "y": {
+     "re": 0.0,
+     "im": -37.3134328358209
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch50",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.14
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "to": "bus37",
+    "from": "bus34",
+    "y": {
+     "re": 0.0,
+     "im": -106.38297872340425
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch51",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus38",
+    "from": "bus37",
+    "y": {
+     "re": 0.0,
+     "im": -26.666666666666668
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch52",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus39",
+    "from": "bus37",
+    "y": {
+     "re": 0.0,
+     "im": -9.433962264150944
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch53",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": -0.25
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus40",
+    "from": "bus37",
+    "y": {
+     "re": 0.0,
+     "im": -5.952380952380952
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch54",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus38",
+    "from": "bus30",
+    "y": {
+     "re": 0.0,
+     "im": -18.51851851851852
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch55",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus40",
+    "from": "bus39",
+    "y": {
+     "re": 0.0,
+     "im": -16.528925619834713
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch56",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus41",
+    "from": "bus40",
+    "y": {
+     "re": 0.0,
+     "im": -20.53388090349076
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch57",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus42",
+    "from": "bus40",
+    "y": {
+     "re": 0.0,
+     "im": -5.46448087431694
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch58",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus42",
+    "from": "bus41",
+    "y": {
+     "re": 0.0,
+     "im": -7.4074074074074066
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch59",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "to": "bus44",
+    "from": "bus43",
+    "y": {
+     "re": 0.0,
+     "im": -4.074979625101874
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch60",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.14
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus43",
+    "from": "bus34",
+    "y": {
+     "re": 0.0,
+     "im": -5.94883997620464
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch61",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "to": "bus45",
+    "from": "bus44",
+    "y": {
+     "re": 0.0,
+     "im": -11.098779134295228
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch62",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "to": "bus46",
+    "from": "bus45",
+    "y": {
+     "re": 0.0,
+     "im": -7.374631268436579
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch63",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus47",
+    "from": "bus46",
+    "y": {
+     "re": 0.0,
+     "im": -7.874015748031496
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch64",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.15
+    },
+    "to": "bus48",
+    "from": "bus46",
+    "y": {
+     "re": 0.0,
+     "im": -5.291005291005291
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch65",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus49",
+    "from": "bus47",
+    "y": {
+     "re": 0.0,
+     "im": -16.0
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch66",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus49",
+    "from": "bus42",
+    "y": {
+     "re": 0.0,
+     "im": -6.191950464396284
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch68",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus49",
+    "from": "bus45",
+    "y": {
+     "re": 0.0,
+     "im": -5.376344086021505
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch69",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.15
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus49",
+    "from": "bus48",
+    "y": {
+     "re": 0.0,
+     "im": -19.801980198019802
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch70",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus50",
+    "from": "bus49",
+    "y": {
+     "re": 0.0,
+     "im": -13.297872340425531
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch71",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus51",
+    "from": "bus49",
+    "y": {
+     "re": 0.0,
+     "im": -7.2992700729927
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch72",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus52",
+    "from": "bus51",
+    "y": {
+     "re": 0.0,
+     "im": -17.006802721088437
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch73",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus53",
+    "from": "bus52",
+    "y": {
+     "re": 0.0,
+     "im": -6.116207951070336
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch74",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus54",
+    "from": "bus53",
+    "y": {
+     "re": 0.0,
+     "im": -8.19672131147541
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch75",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus54",
+    "from": "bus49",
+    "y": {
+     "re": 0.0,
+     "im": -6.896633729295235
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch77",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus55",
+    "from": "bus54",
+    "y": {
+     "re": 0.0,
+     "im": -14.144271570014144
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch78",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus56",
+    "from": "bus54",
+    "y": {
+     "re": 0.0,
+     "im": -104.71204188481676
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch79",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus56",
+    "from": "bus55",
+    "y": {
+     "re": 0.0,
+     "im": -66.2251655629139
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch80",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus57",
+    "from": "bus56",
+    "y": {
+     "re": 0.0,
+     "im": -10.351966873706004
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch81",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus57",
+    "from": "bus50",
+    "y": {
+     "re": 0.0,
+     "im": -7.462686567164178
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch82",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus58",
+    "from": "bus56",
+    "y": {
+     "re": 0.0,
+     "im": -10.351966873706004
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch83",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus58",
+    "from": "bus51",
+    "y": {
+     "re": 0.0,
+     "im": -13.908205841446453
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch84",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus59",
+    "from": "bus54",
+    "y": {
+     "re": 0.0,
+     "im": -4.361098996947231
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch85",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus59",
+    "from": "bus56",
+    "y": {
+     "re": 0.0,
+     "im": -8.168164163429962
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch87",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus59",
+    "from": "bus55",
+    "y": {
+     "re": 0.0,
+     "im": -4.633920296570899
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch88",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus60",
+    "from": "bus59",
+    "y": {
+     "re": 0.0,
+     "im": -6.8965517241379315
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch89",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus61",
+    "from": "bus59",
+    "y": {
+     "re": 0.0,
+     "im": -6.666666666666667
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch90",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus61",
+    "from": "bus60",
+    "y": {
+     "re": 0.0,
+     "im": -74.07407407407408
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch91",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus62",
+    "from": "bus60",
+    "y": {
+     "re": 0.0,
+     "im": -17.825311942959004
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch92",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus62",
+    "from": "bus61",
+    "y": {
+     "re": 0.0,
+     "im": -26.595744680851062
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch93",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus63",
+    "from": "bus59",
+    "y": {
+     "re": 0.0,
+     "im": -25.906735751295336
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch94",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus64",
+    "from": "bus63",
+    "y": {
+     "re": 0.0,
+     "im": -50.0
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch95",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus64",
+    "from": "bus61",
+    "y": {
+     "re": 0.0,
+     "im": -37.3134328358209
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch96",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus65",
+    "from": "bus38",
+    "y": {
+     "re": 0.0,
+     "im": -10.141987829614605
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch97",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus65",
+    "from": "bus64",
+    "y": {
+     "re": 0.0,
+     "im": -33.11258278145695
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch98",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus66",
+    "from": "bus49",
+    "y": {
+     "re": 0.0,
+     "im": -21.762785636561482
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch100",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus66",
+    "from": "bus62",
+    "y": {
+     "re": 0.0,
+     "im": -4.587155963302752
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch101",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus67",
+    "from": "bus62",
+    "y": {
+     "re": 0.0,
+     "im": -8.547008547008547
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch102",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus66",
+    "from": "bus65",
+    "y": {
+     "re": 0.0,
+     "im": -27.027027027027028
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch103",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus67",
+    "from": "bus66",
+    "y": {
+     "re": 0.0,
+     "im": -9.852216748768472
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch104",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus68",
+    "from": "bus65",
+    "y": {
+     "re": 0.0,
+     "im": -62.5
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch105",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus69",
+    "from": "bus47",
+    "y": {
+     "re": 0.0,
+     "im": -3.599712023038157
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch106",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus69",
+    "from": "bus49",
+    "y": {
+     "re": 0.0,
+     "im": -3.0864197530864197
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch107",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus69",
+    "from": "bus68",
+    "y": {
+     "re": 0.0,
+     "im": -27.027027027027028
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch108",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus70",
+    "from": "bus69",
+    "y": {
+     "re": 0.0,
+     "im": -7.874015748031496
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch109",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus70",
+    "from": "bus24",
+    "y": {
+     "re": 0.0,
+     "im": -2.4301336573511545
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch110",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus71",
+    "from": "bus70",
+    "y": {
+     "re": 0.0,
+     "im": -28.169014084507044
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch111",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus72",
+    "from": "bus24",
+    "y": {
+     "re": 0.0,
+     "im": -5.1020408163265305
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch112",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus72",
+    "from": "bus71",
+    "y": {
+     "re": 0.0,
+     "im": -5.555555555555555
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch113",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus73",
+    "from": "bus71",
+    "y": {
+     "re": 0.0,
+     "im": -22.026431718061673
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch114",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.12
+    },
+    "to": "bus74",
+    "from": "bus70",
+    "y": {
+     "re": 0.0,
+     "im": -7.558578987150415
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch115",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus75",
+    "from": "bus70",
+    "y": {
+     "re": 0.0,
+     "im": -7.092198581560284
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch116",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus75",
+    "from": "bus69",
+    "y": {
+     "re": 0.0,
+     "im": -8.19672131147541
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch117",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.12
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus75",
+    "from": "bus74",
+    "y": {
+     "re": 0.0,
+     "im": -24.630541871921185
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch118",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus77",
+    "from": "bus76",
+    "y": {
+     "re": 0.0,
+     "im": -6.756756756756757
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch119",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus77",
+    "from": "bus69",
+    "y": {
+     "re": 0.0,
+     "im": -9.900990099009901
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch120",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus77",
+    "from": "bus75",
+    "y": {
+     "re": 0.0,
+     "im": -5.002501250625313
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch121",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus78",
+    "from": "bus77",
+    "y": {
+     "re": 0.0,
+     "im": -80.64516129032258
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch122",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "to": "bus79",
+    "from": "bus78",
+    "y": {
+     "re": 0.0,
+     "im": -40.983606557377044
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch123",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus80",
+    "from": "bus77",
+    "y": {
+     "re": 0.0,
+     "im": -30.14236622484045
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch125",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus80",
+    "from": "bus79",
+    "y": {
+     "re": 0.0,
+     "im": -14.204545454545453
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch126",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus81",
+    "from": "bus68",
+    "y": {
+     "re": 0.0,
+     "im": -49.504950495049506
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch127",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus81",
+    "from": "bus80",
+    "y": {
+     "re": 0.0,
+     "im": -27.027027027027028
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch128",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "to": "bus82",
+    "from": "bus77",
+    "y": {
+     "re": 0.0,
+     "im": -11.723329425556859
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch129",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "to": "bus83",
+    "from": "bus82",
+    "y": {
+     "re": 0.0,
+     "im": -27.28512960436562
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch130",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus84",
+    "from": "bus83",
+    "y": {
+     "re": 0.0,
+     "im": -7.575757575757575
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch131",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.1
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus85",
+    "from": "bus83",
+    "y": {
+     "re": 0.0,
+     "im": -6.756756756756757
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch132",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus85",
+    "from": "bus84",
+    "y": {
+     "re": 0.0,
+     "im": -15.600624024960997
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch133",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus86",
+    "from": "bus85",
+    "y": {
+     "re": 0.0,
+     "im": -8.130081300813009
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch134",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus87",
+    "from": "bus86",
+    "y": {
+     "re": 0.0,
+     "im": -4.821600771456123
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch135",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus88",
+    "from": "bus85",
+    "y": {
+     "re": 0.0,
+     "im": -9.803921568627452
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch136",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus89",
+    "from": "bus85",
+    "y": {
+     "re": 0.0,
+     "im": -5.780346820809249
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch137",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus89",
+    "from": "bus88",
+    "y": {
+     "re": 0.0,
+     "im": -14.04494382022472
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch138",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus90",
+    "from": "bus89",
+    "y": {
+     "re": 0.0,
+     "im": -15.349239206982649
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch140",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus91",
+    "from": "bus90",
+    "y": {
+     "re": 0.0,
+     "im": -11.961722488038278
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch141",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus92",
+    "from": "bus89",
+    "y": {
+     "re": 0.0,
+     "im": -26.127090887456866
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch143",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus92",
+    "from": "bus91",
+    "y": {
+     "re": 0.0,
+     "im": -7.861635220125786
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch144",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus93",
+    "from": "bus92",
+    "y": {
+     "re": 0.0,
+     "im": -11.79245283018868
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch145",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus94",
+    "from": "bus92",
+    "y": {
+     "re": 0.0,
+     "im": -6.329113924050633
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch146",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus94",
+    "from": "bus93",
+    "y": {
+     "re": 0.0,
+     "im": -13.66120218579235
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch147",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus95",
+    "from": "bus94",
+    "y": {
+     "re": 0.0,
+     "im": -23.04147465437788
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch148",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus96",
+    "from": "bus80",
+    "y": {
+     "re": 0.0,
+     "im": -5.4945054945054945
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch149",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus96",
+    "from": "bus82",
+    "y": {
+     "re": 0.0,
+     "im": -18.867924528301888
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch150",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus96",
+    "from": "bus94",
+    "y": {
+     "re": 0.0,
+     "im": -11.507479861910241
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch151",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus97",
+    "from": "bus80",
+    "y": {
+     "re": 0.0,
+     "im": -10.706638115631693
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch152",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus98",
+    "from": "bus80",
+    "y": {
+     "re": 0.0,
+     "im": -9.25925925925926
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch153",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus99",
+    "from": "bus80",
+    "y": {
+     "re": 0.0,
+     "im": -4.8543689320388355
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch154",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus100",
+    "from": "bus92",
+    "y": {
+     "re": 0.0,
+     "im": -3.3898305084745766
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch155",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus100",
+    "from": "bus94",
+    "y": {
+     "re": 0.0,
+     "im": -17.241379310344826
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch156",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus96",
+    "from": "bus95",
+    "y": {
+     "re": 0.0,
+     "im": -18.281535648994517
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch157",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus97",
+    "from": "bus96",
+    "y": {
+     "re": 0.0,
+     "im": -11.299435028248588
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch158",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus100",
+    "from": "bus98",
+    "y": {
+     "re": 0.0,
+     "im": -5.58659217877095
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch159",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus100",
+    "from": "bus99",
+    "y": {
+     "re": 0.0,
+     "im": -12.300123001230013
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch160",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus101",
+    "from": "bus100",
+    "y": {
+     "re": 0.0,
+     "im": -7.923930269413629
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch161",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus102",
+    "from": "bus92",
+    "y": {
+     "re": 0.0,
+     "im": -17.88908765652952
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch162",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus102",
+    "from": "bus101",
+    "y": {
+     "re": 0.0,
+     "im": -8.928571428571429
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch163",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus103",
+    "from": "bus100",
+    "y": {
+     "re": 0.0,
+     "im": -19.047619047619047
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch164",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus104",
+    "from": "bus100",
+    "y": {
+     "re": 0.0,
+     "im": -4.901960784313726
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch165",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus104",
+    "from": "bus103",
+    "y": {
+     "re": 0.0,
+     "im": -6.313131313131312
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch166",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "to": "bus105",
+    "from": "bus103",
+    "y": {
+     "re": 0.0,
+     "im": -6.153846153846153
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch167",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus106",
+    "from": "bus100",
+    "y": {
+     "re": 0.0,
+     "im": -4.366812227074235
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch168",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "to": "bus105",
+    "from": "bus104",
+    "y": {
+     "re": 0.0,
+     "im": -26.455026455026456
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch169",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus106",
+    "from": "bus105",
+    "y": {
+     "re": 0.0,
+     "im": -18.281535648994517
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch170",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "to": "bus107",
+    "from": "bus105",
+    "y": {
+     "re": 0.0,
+     "im": -5.46448087431694
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch171",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.2
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus108",
+    "from": "bus105",
+    "y": {
+     "re": 0.0,
+     "im": -14.22475106685633
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch172",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "to": "bus107",
+    "from": "bus106",
+    "y": {
+     "re": 0.0,
+     "im": -5.46448087431694
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch173",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus109",
+    "from": "bus108",
+    "y": {
+     "re": 0.0,
+     "im": -34.72222222222222
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch174",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "to": "bus110",
+    "from": "bus103",
+    "y": {
+     "re": 0.0,
+     "im": -5.515719801434088
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch175",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "to": "bus110",
+    "from": "bus109",
+    "y": {
+     "re": 0.0,
+     "im": -13.123359580052492
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch176",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus111",
+    "from": "bus110",
+    "y": {
+     "re": 0.0,
+     "im": -13.245033112582782
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch177",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.06
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus112",
+    "from": "bus110",
+    "y": {
+     "re": 0.0,
+     "im": -15.625
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch178",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus113",
+    "from": "bus17",
+    "y": {
+     "re": 0.0,
+     "im": -33.222591362126245
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch179",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus113",
+    "from": "bus32",
+    "y": {
+     "re": 0.0,
+     "im": -4.926108374384236
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch180",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus114",
+    "from": "bus32",
+    "y": {
+     "re": 0.0,
+     "im": -16.339869281045754
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch181",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus115",
+    "from": "bus27",
+    "y": {
+     "re": 0.0,
+     "im": -13.49527665317139
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch182",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus115",
+    "from": "bus114",
+    "y": {
+     "re": 0.0,
+     "im": -96.15384615384616
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch183",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus116",
+    "from": "bus68",
+    "y": {
+     "re": 0.0,
+     "im": -246.9135802469136
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch184",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus117",
+    "from": "bus12",
+    "y": {
+     "re": 0.0,
+     "im": -7.142857142857142
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch185",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus118",
+    "from": "bus75",
+    "y": {
+     "re": 0.0,
+     "im": -20.79002079002079
+    }
+   },
+   "type": "PiModelLine"
+  },
+  {
+   "name": "branch186",
+   "params": {
+    "y_shunt_km": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "y_shunt_mk": {
+     "re": 0.0,
+     "im": 0.0
+    },
+    "to": "bus118",
+    "from": "bus76",
+    "y": {
+     "re": 0.0,
+     "im": -18.38235294117647
+    }
+   },
+   "type": "PiModelLine"
+  }
+ ],
+ "version": "1"
+}
