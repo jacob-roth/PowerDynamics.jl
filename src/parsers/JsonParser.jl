@@ -100,6 +100,9 @@ function convert_line(line)
         line = StaticLine(;sym_params...)
     elseif type == "PiModelLine"
         line = PiModelLine(;sym_params...)
+    elseif type == "PiModelLineTapratio"
+        line = PiModelLineTapratio(;sym_params...)
+        # line = PiModel(sym_params[:y], sym_params[:y_shunt_km], sym_params[:y_shunt_mk], sym_params[:t_shunt_km], sym_params[:t_shunt_mk])
     elseif type == "Transformer"
         line = Transformer(;sym_params...)
     else

@@ -15,9 +15,22 @@ end
 function filter_multiple_lines(lines::Array, line_names)
     copy(lines[1:end.∉line_names])
 end
+struct LineFailures <: AbstractPerturbation
+    line_names::Any
+    tspan_fault::Any
+    LineFailures(; line_names = line_names, tspan_fault = tspan_fault) =
+        new(line_names, tspan_fault)
+end
+
+function (lfs::LineFailures)(powergrid)
+    filtered_lines = filter_multiple_lines(copy(powergrid.lines), lfs.line_names)
+    PowerGrid(powergrid.nodes, filtered_lines)
+end
 ## NEW
 
 ## LineFault -> deprecation
+
+
 
 """
 ```Julia
@@ -83,21 +96,6 @@ function (lf::LineFailure)(powergrid)
     filtered_lines = filter_lines(powergrid.lines, lf.line_name)
     PowerGrid(powergrid.nodes, filtered_lines)
 end
-
-## NEW
-struct LineFailures <: AbstractPerturbation
-    line_names::Any
-    tspan_fault::Any
-    LineFailures(; line_names = line_names, tspan_fault = tspan_fault) =
-        new(line_names, tspan_fault)
-end
-
-function (lfs::LineFailures)(powergrid)
-    filtered_lines = filter_multiple_lines(copy(powergrid.lines), lfs.line_names)
-    PowerGrid(powergrid.nodes, filtered_lines)
-end
-## NEW
-
 
 export LineFault
 export LineFailure
