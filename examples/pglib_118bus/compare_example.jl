@@ -11,7 +11,7 @@ using JSON
 ##
 operatingdata_path = "/Users/jakeroth/git/PowerDynamics.jl/examples/pglib_118bus/1_00__0__0__acopf__1_05/"
 line_type = "PiModelLine"#Tapratio"
-line_type = "PiModelLineTapratio"
+# line_type = "PiModelLineTapratio"
 
 casepath = "/Users/jakeroth/Desktop/planning-large-deviation/data/cases/118-files/"
 casename = "mpc_lowdamp_pgliblimits"
