@@ -70,3 +70,17 @@ Q - Q_import .> 1e-5
 
 lineratios = findall(lines.ratio.!=0)
 findall(P - P_import .> 1e-5)
+
+
+##
+## simulate
+##
+timespan = (0,100.0)
+fault1 = ChangeInitialConditions(node = "bus1", var = :ω, f = Inc(0.0));
+solution1 = simulate(fault1, powergrid, operationpoint, timespan);
+plot1 = create_plot(solution1)
+
+timespan = (0,100.0)
+fault1 = ChangeInitialConditions(node = "bus1", var = :ω, f = Inc(0.0));
+solution1 = simulate(fault1, powergrid, imported_operationpoint, timespan);
+plot1 = create_plot(solution1)
