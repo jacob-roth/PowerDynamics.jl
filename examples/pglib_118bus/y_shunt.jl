@@ -7,8 +7,7 @@ branches = Int.(branch_file[:,1:2])
 
 num_branches = size(branches,1)
 
-y_shunt_km_dict = Dict()
-y_shunt_mk_dict = Dict()
+y_shunt_arr = zeros(Complex, num_branches, num_branches)
 
 for branch_idx in 1:num_branches
     from_bus = branches[branch_idx,1]
@@ -24,14 +23,11 @@ for branch_idx in 1:num_branches
     y_shunt_km = im*(line_b / 2 + (from_Bs / baseMVA))
     y_shunt_mk = im*(line_b / 2 + (to_Bs / baseMVA))
     
-    y_shunt_km_dict[(from_bus,to_bus)] = y_shunt_km
-    y_shunt_mk_dict[(to_bus,from_bus)] = y_shunt_mk
+    y_shunt_arr[from_bus,to_bus] = y_shunt_km
+    y_shunt_arr[to_bus,from_bus] = y_shunt_mk
 end
 
-open("/mpc_lowdamp_pgliblimits.y_shunt_km", "w") do io
-    writedlm(io, y_shunt_km_dict)
+open("/mpc_lowdamp_pgliblimits.y_shunt_arr", "w") do io
+    writedlm(io, y_shunt_arr)
 end
 
-open("/mpc_lowdamp_pgliblimits.y_shunt_mk", "w") do io
-    writedlm(io, y_shunt_mk_dict)
-end
