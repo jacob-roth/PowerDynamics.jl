@@ -56,32 +56,51 @@ function find_stable_time(sol::PowerGridSolution, tol::Float64)
   end
 end
 
-function kmc2pd(M::Dict)
-  """
-  tbd
-  """
-  Vm_internal = M[:Vm_internal]
-  Va_intenal = M[:Va_intenal]
-  Vm_IDs = M[:Vm_IDs]
-  Va_IDs = M[:Va_IDs]
-  Vm = M[:Vm]
-  Va = M[:Va]
-  Y = M[:Y]
-  Pnet = M[:Pnet]
-  Qnet = M[:Qnet]
-  
-  power_injections = M[:power_injections]    
-  Pg = M[:Pg]
-  Qg = M[:Qg]
-  Pd = M[:Pd]
-  Qd = M[:Qd]
-  save_xbar = M[:save_xbar]
+function load_kmc_dict(operatingdata_path::String, failure_idx::Int, num_seqs::Int=10) 
+  Pnet = readdlm(operatingdata_path * "Pnet_$(failure_idx).txt")
+  Qnet = readdlm(operatingdata_path * "Qnet_$(failure_idx).txt")
+  xbar = readdlm(operatingdata_path * "xbar_$(failure_idx).txt")
+  Vm = readdlm(operatingdata_path * "Vm_$(failure_idx).txt")
+  Va = readdlm(operatingdata_path * "Va_$(failure_idx).txt")
+  IDs = readdlm(operatingdata_path * "IDs.txt")
+  ic_IDs = Int.(readdlm(operatingdata_path * "ic_IDs.txt"))
+
+  Y_arr = Vector{Array{Complex}}(undef, num_seqs)
+  for seq_idx in 1:num_seqs
+    Y = readdlm(operatingdata_path * "Y_$(failure_idx)_seq_$(seq_idx).txt", '\t', ComplexF64)
+    Y_arr[seq_idx] = Y
+  end
+
+  kmc_dict = Dict()
+  kmc_dict[:Pnet] = Pnet
+  kmc_dict[:Qnet] = Qnet
+  kmc_dict[:xbar] = xbar
+  kmc_dict[:Vm] = Vm
+  kmc_dict[:Va] = Va
+  kmc_dict[:Y] = Y_arr
+  kmc_dict[:IDs] = IDs[:, failure_idx]
+  kmc_dict[:ic_IDs] = ic_IDs
+
+  return kmc_dict
 end
 
-function load_kmc_output(filename::String)
-  """
-  tbd
-  """
-    
-filename = 
+function kmc2pd(fileout::String, opfmodeldata::Dict, kmc_dict::Dict,
+                line_type::String, bus_type::String, seq_idx::Int,
+                nobus_Bshunt::Bool=false, phys::Dict=physDefault)
+  Y = kmc_dict[:Y][seq_idx]
+  if isa(Y, AbstractArray{<:Complex})
+    opfmodeldata[:Y] = imag.(Y)
+  else
+    opfmodeldata[:Y] = Y
+  end
+
+  optimal_values = Dict()
+  optimal_values[:Vm] = kmc_dict[:Vm][seq_idx,:]
+  optimal_values[:Va] = kmc_dict[:Va][seq_idx,:]
+  optimal_values[:Pnet] = kmc_dict[:Pnet][seq_idx,:]
+  optimal_values[:Qnet] = kmc_dict[:Qnet][seq_idx,:]
+  optimal_values[:IDs] = kmc_dict[:IDs][seq_idx]
+  optimal_values[:ic_IDs] = kmc_dict[:ic_IDs][seq_idx,:]
+
+  return opf2pd(fileout, optimal_values, opfmodeldata, line_type, bus_type, nobus_Bshunt, phys)
 end
