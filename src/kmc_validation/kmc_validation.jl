@@ -89,9 +89,9 @@ function kmc2pd(fileout::String, opfmodeldata::Dict, kmc_dict::Dict,
                 nobus_Bshunt::Bool=false, phys::Dict=physDefault)
   Y = kmc_dict[:Y][seq_idx]
   if isa(Y, AbstractArray{<:Complex})
-    opfmodeldata[:Y] = imag.(Y)
+    opfmodeldata[:Y] = -imag.(Y)
   else
-    opfmodeldata[:Y] = Y
+    opfmodeldata[:Y] = -Y
   end
 
   optimal_values = Dict()
