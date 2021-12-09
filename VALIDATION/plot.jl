@@ -1,0 +1,36 @@
+# using Plots
+# using PowerDynamics: SwingEq
+
+# function create_plot(sol, powergrid)
+#     generator_indices = findall(bus -> typeof(bus) == SwingEqLVS, powergrid.nodes)
+#     labels = reshape(generator_indices,(1,length(generator_indices)))
+
+#     pl_v = Plots.plot(sol, generator_indices, :v, legend = (0.8, 0.7), ylabel="V [p.u.]",  label=labels)
+#     pl_p = Plots.plot(sol, generator_indices, :p, legend = (0.8, 0.7), ylabel="p [p.u.]",  label=labels)
+#     pl_q = Plots.plot(sol, generator_indices, :q, legend = (0.8, 0.7), ylabel="q [p.u.]",  label=labels)
+#     pl_ω = Plots.plot(sol, generator_indices, :ω, legend = (0.8, 0.7), ylabel="ω [rad/s]", label=labels)
+
+#     pl = Plots.plot(pl_ω, pl_v, pl_p, pl_q;
+#             layout=(2,2),
+#             size = (1000, 500),
+#             lw=3,
+#             xlabel="t[s]")
+# end
+
+using PyPlot
+function create_plot(sol, powergrid)
+    generator_indices = findall(bus -> typeof(bus) == SwingEqLVS, powergrid.nodes)
+    labels = reshape(generator_indices,(1,length(generator_indices)))
+
+    fig, ax = plt.subplots()
+    pl_v = ax.plot(sol.dqsol, generator_indices, :v, legend = (0.8, 0.7), ylabel="V [p.u.]",  label=labels)
+    pl_p = ax.plot(sol.dqsol, generator_indices, :p, legend = (0.8, 0.7), ylabel="p [p.u.]",  label=labels)
+    pl_q = ax.plot(sol.dqsol, generator_indices, :q, legend = (0.8, 0.7), ylabel="q [p.u.]",  label=labels)
+    pl_ω = ax.plot(sol.dqsol, generator_indices, :ω, legend = (0.8, 0.7), ylabel="ω [rad/s]", label=labels)
+
+    pl = Plots.plot(pl_ω, pl_v, pl_p, pl_q;
+            layout=(2,2),
+            size = (1000, 500),
+            lw=3,
+            xlabel="t[s]")
+end
