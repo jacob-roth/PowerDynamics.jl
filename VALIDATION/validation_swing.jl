@@ -87,123 +87,97 @@ op_kmc = State(powergrid0, op_kmc_vec)
 op_pd = find_operationpoint(powergrid0, sol_method=:dynamic)
 @assert(norm(err_from_root(op_pd)) < 5e-5)
 
-op_pds = Array{PowerGridSolution}(undef, length(oklines), 1)
-op_pds = Array{Any}(undef, length(oklines),1)
-tstable_op_pds = Array{Any}(undef, length(oklines), 1)
+global op_pds = Array{Any}(undef, length(oklines),1)
+global tstable_op_pds = Array{Any}(undef, length(oklines), 1)
 tol = 1e-5
 for l in oklines
     println("line=$l, idx=$(id2idx[l])")
     fault_l = LineFailure(line_name="branch$(l)", tspan_fault=(1,Inf))
     try
-        sol_pd = simulate(fault_l, powergrid0, op_pd, (0,1e3));
-        tstable_op_pd = find_stable_time(sol_pd, powergrid0, fault_l, tol)
-        op_pds[id2idx[l]] = sol_pd;
-        tstable_op_pds[id2idx[l]] = tstable_op_pd;
+        global sol_pd = simulate(fault_l, powergrid0, op_pd, (0,1e3));
+        global tstable_op_pd = find_stable_time(sol_pd, powergrid0, fault_l, tol)
+        global op_pds[id2idx[l]] = sol_pd.dqsol[end];
+        global tstable_op_pds[id2idx[l]] = tstable_op_pd;
     catch e
         println(e)
-        sol_pd = nothing
-        tstable_op_pd = -Inf
+        global sol_pd = [-Inf]
+        global tstable_op_pd = -Inf
     finally
-        op_pds[id2idx[l]] = sol_pd
-        tstable_op_pds[id2idx[l]] = tstable_op_pd
+        global op_pds[id2idx[l]] = sol_pd
+        global tstable_op_pds[id2idx[l]] = tstable_op_pd
     end
 end
 
 writedlm("data/op_pds_swing.csv", op_pds)
 writedlm("data/tstable_op_pds_swing.csv", tstable_op_pds)
 
-op_pds = readdlm("data/op_pds_swing.csv")
-tstable_op_pds = readdlm("data/tstable_op_pds_swing.csv")
+# op_pds = readdlm("data/op_pds_swing.csv")
+# tstable_op_pds = readdlm("data/tstable_op_pds_swing.csv")
 
 pg0 = deepcopy(powergrid0)
 unstable = findall(vec(tstable_op_pds) .< 0) # SAME AS KMC RIGHT NOW...
 stable = findall(vec(tstable_op_pds) .> 0) # SAME AS KMC RIGHT NOW...
 op_stability_kmc = []
-op_stability_pd = []
+# op_stability_pd = []
 for l in oklines
     idx = id2idx[l]
     println("line $l")
     fault_l = LineFailure(line_name="branch$(l)", tspan_fault=(1,Inf))
     pg = deepcopy(pg0)
     grid_l = fault_l(pg)
-    op_pd_l_vec = op_pds[idx,:]
+    # op_pd_l_vec = op_pds[idx,:]
     op_kmc_l_vec = import_own_operatingpoint(grid_l, op_kmc_dict_ls[idx])
-    op_pd_l_state = State(grid_l, op_pd_l_vec)
+    # op_pd_l_state = State(grid_l, op_pd_l_vec)
     op_kmc_l_state = State(grid_l, op_kmc_l_vec)
     err_kmc_vec = err_from_root(op_kmc_l_state)
-    err_pd_vec = err_from_root(op_pd_l_state)
+    # err_pd_vec = err_from_root(op_pd_l_state)
     err_kmc = norm(err_kmc_vec)
-    err_pd = norm(err_pd_vec)
+    # err_pd = norm(err_pd_vec)
     push!(op_stability_kmc, err_kmc)
-    push!(op_stability_pd, err_pd)
+    # push!(op_stability_pd, err_pd)
 end
+
+writedlm("data/op_stability_kmc_swing.csv", op_stability_kmc)
+
 
 ##
 ## stats
 ##
+maximum(tstable_op_pds)
+mean(tstable_op_pds[tstable_op_pds.>0])
+
 powergrid = powergrid0
 PD_line_names = collect(keys(powergrid.lines))
 PD_line_IDs = parse.(Int,[replace(k,"branch" => "" ) for k in PD_line_names])
 
 err_IDs = findall(vec(tstable_op_pds).<0)
 nonerr_IDs = findall(vec(tstable_op_pds).>0)
-# unstable_IDs = [7,9,16,28,29,51,56,61,70,137,161,184]
-# calcerr_IDs = [113,133,134,176,177,183]
 stable_line_IDs = nonerr_IDs
+unstable_line_IDs = err_IDs
 
-n_PD_lines = length(powergrid.lines)
+## pd totals
+n_ok_PD_lines = length(oklines)
 n_stable_lines = length(stable_line_IDs)
-pct_stable_lines = n_stable_lines / n_PD_lines
-n_KMC_unstable = sum(abs.(op_stability_kmc[stable_line_IDs]).>1e-5)
-n_KMC_stable = sum(abs.(op_stability_kmc[stable_line_IDs]).<=1e-5)
-pct_KMC_stable = n_KMC_stable / n_stable_lines
 
-sum(abs.(op_stability_kmc[err_IDs]).<=1e-5)
-sum(abs.(op_stability_kmc).>=1e-5)
+## kmc stable/unstable for PD stable
+n_KMC_unstable_PD_stable = sum(abs.(op_stability_kmc[stable_line_IDs]).>1e-5)
+n_KMC_stable_PD_stable = sum(abs.(op_stability_kmc[stable_line_IDs]).<=1e-5)
 
-
-not_same_lines = filter(x->x ∉ PD_line_IDs, collect(1:186))
-KMC_all_unstable = findall(abs.(op_stability_kmc).>1e-5)
-
-KMC_incremental_unstable = filter(x->x ∉ unstable_IDs, KMC_all_unstable)
-KMC_incremental_unstable = filter(x->x ∉ calcerr_IDs, KMC_incremental_unstable)
-KMC_incremental_unstable = filter(x->x ∉ not_same_lines, KMC_incremental_unstable)
+## kmc stable/unstable for PD unstable
+n_KMC_stable_PD_unstable = sum(abs.(op_stability_kmc[unstable_line_IDs]).>1e-5)
+n_KMC_unstable_PD_unstable = sum(abs.(op_stability_kmc[unstable_line_IDs]).<=1e-5)
 
 
-KMC_incremental_unstable = filter(x->x ∉ err_IDs, KMC_all_unstable)
-KMC_incremental_unstable = filter(x->x ∉ not_same_lines, KMC_incremental_unstable)
-
-
-n_KMC_unstable = sum(abs.(op_stability_kmc[err_IDs]).>1e-5)
-
-
-
-
-
-
-# PD_line_names = collect(keys(powergrid.lines))
-# PD_line_IDs = parse.(Int,[replace(k,"branch" => "" ) for k in PD_line_names])
-# PD_unstable_line_IDs = findall(vec(tstable_op_pds) .< 0) # SAME AS KMC RIGHT NOW...
-# PD_stable_line_IDs = findall(vec(tstable_op_pds) .> 0) # SAME AS KMC RIGHT NOW...
-# PD_unstable_line_names = ["branch$i" for i in PD_unstable_line_IDs]
-# PD_stable_line_names = ["branch$i" for i in PD_stable_line_IDs]
-# PD_line_err_IDs = [7,9,16,28,29,51,56,61,70,137,161,184]
-# PD_line_calctime_IDs = [113,133,134,176,177,183]
-
-# ## PD no calculation timeout
-# PD_notimeout = filter(x->x∉PD_line_err_IDs ,PD_line_IDs)
-# sum(tstable_op_pds[PD_notimeout] .< 0)
-
-# PD_no_error_names = PD_stable_line_names
-# PD_no_error_IDs = parse.(Int,[replace(k,"branch" => "" ) for k in PD_no_error_names])
-
-
-# ## 
-# we should only focus on those where first and foremost PD did not give numerical error
-# From these, we should report % stable, % unstable. For the % stable, we should check how many were detected by KMC.
-
-# ## ops at unstable lines
-# op_stability_kmc[PD_unstable_line_IDs]
-# op_stability_pd[PD_unstable_line_IDs]
-
-# ## 
+op_pds = Array{Any}(undef, 5)
+tstable_op_pds = Array{Any}(undef, 5)
+for l in 1:2;
+    if l==2; throw("er"); end;
+    try
+        global sol_pd2 = 1
+    catch e
+        println(e)
+        global sol_pd2 = 2
+    finally
+        op_pds[l] = sol_pd2
+    end
+end
