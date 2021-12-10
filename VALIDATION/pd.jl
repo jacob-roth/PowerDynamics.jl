@@ -21,3 +21,23 @@ function find_stable_time(sol::PowerGridSolution, powergrid::PowerGrid, fault, t
     return t_stable
   end
 end
+
+
+function get_ok_lines(powergrid)
+    ok = []
+    mask = zeros(Bool, length(keys(powergrid.lines)))
+    i = 0
+    for lkey in keys(powergrid.lines)
+        i += 1
+        f = powergrid.lines[lkey].from
+        t = powergrid.lines[lkey].to
+        if typeof(powergrid.nodes[f]) == SwingEq && typeof(powergrid.nodes[t]) == SwingEq
+            mask[i] = 0
+            continue
+        else
+            push!(ok, lkey)
+            mask[i] = 1
+        end
+    end
+    return ok, mask
+end
