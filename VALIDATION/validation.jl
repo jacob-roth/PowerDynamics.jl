@@ -213,6 +213,8 @@ err_IDs = findall(vec(tstable_op_pds).<0)
 nonerr_IDs = findall(vec(tstable_op_pds).>0)
 unstable_IDs = [7,9,16,28,29,51,56,61,70,137,161,184]
 calcerr_IDs = [113,133,134,176,177,183]
+
+133, 177, 183
 stable_line_IDs = filter(x->x∉unstable_IDs, nonerr_IDs)
 @assert(Set(err_IDs) == Set([calcerr_IDs...,unstable_IDs...]))
 

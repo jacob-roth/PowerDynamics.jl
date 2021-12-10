@@ -94,7 +94,7 @@ for l in oklines
     println("line=$l, idx=$(id2idx[l])")
     fault_l = LineFailure(line_name="branch$(l)", tspan_fault=(1,Inf))
     try
-        global sol_pd = simulate(fault_l, powergrid0, op_pd, (0,1e3));
+        global sol_pd = simulate(fault_l, powergrid0, op_kmc, (0,1e3));
         global tstable_op_pd = find_stable_time(sol_pd, powergrid0, fault_l, tol)
         global op_pds[id2idx[l]] = sol_pd.dqsol[end];
         global tstable_op_pds[id2idx[l]] = tstable_op_pd;
@@ -118,23 +118,29 @@ pg0 = deepcopy(powergrid0)
 unstable = findall(vec(tstable_op_pds) .< 0) # SAME AS KMC RIGHT NOW...
 stable = findall(vec(tstable_op_pds) .> 0) # SAME AS KMC RIGHT NOW...
 op_stability_kmc = []
-# op_stability_pd = []
+op_stability_pd = []
+op_diff = []
 for l in oklines
     idx = id2idx[l]
     println("line $l")
     fault_l = LineFailure(line_name="branch$(l)", tspan_fault=(1,Inf))
     pg = deepcopy(pg0)
     grid_l = fault_l(pg)
-    # op_pd_l_vec = op_pds[idx,:]
+    if isa(op_pds[idx], Array)
+        op_pd_l_vec = zeros(289)
+    else
+        op_pd_l_vec = op_pds[idx].dqsol[end]
+    end
     op_kmc_l_vec = import_own_operatingpoint(grid_l, op_kmc_dict_ls[idx])
-    # op_pd_l_state = State(grid_l, op_pd_l_vec)
+    op_pd_l_state = State(grid_l, op_pd_l_vec)
     op_kmc_l_state = State(grid_l, op_kmc_l_vec)
     err_kmc_vec = err_from_root(op_kmc_l_state)
-    # err_pd_vec = err_from_root(op_pd_l_state)
+    err_pd_vec = err_from_root(op_pd_l_state)
     err_kmc = norm(err_kmc_vec)
-    # err_pd = norm(err_pd_vec)
+    err_pd = norm(err_pd_vec)
     push!(op_stability_kmc, err_kmc)
-    # push!(op_stability_pd, err_pd)
+    push!(op_stability_pd, err_pd)
+    push!(op_diff, norm(op_kmc_l_vec - op_pd_l_vec))
 end
 
 writedlm("data/op_stability_kmc_swing.csv", op_stability_kmc)
@@ -145,6 +151,7 @@ writedlm("data/op_stability_kmc_swing.csv", op_stability_kmc)
 ##
 maximum(tstable_op_pds)
 mean(tstable_op_pds[tstable_op_pds.>0])
+std(tstable_op_pds[tstable_op_pds.>0])
 
 powergrid = powergrid0
 PD_line_names = collect(keys(powergrid.lines))
@@ -166,6 +173,10 @@ n_KMC_stable_PD_stable = sum(abs.(op_stability_kmc[stable_line_IDs]).<=1e-5)
 ## kmc stable/unstable for PD unstable
 n_KMC_stable_PD_unstable = sum(abs.(op_stability_kmc[unstable_line_IDs]).>1e-5)
 n_KMC_unstable_PD_unstable = sum(abs.(op_stability_kmc[unstable_line_IDs]).<=1e-5)
+
+findall(abs.(op_diff).>1e-5)
+
+op_diff[[id2idx[i] for i in stable_line_IDs]]
 
 
 op_pds = Array{Any}(undef, 5)
