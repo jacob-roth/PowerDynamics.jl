@@ -103,9 +103,13 @@ for l in oklines
         global tstable_op_kmc2pds[id2idx[l]] = tstable_op_kmc2pd
     catch e
         println(e)
+        println("catch")
         global sol_pd = -Inf
         global tstable_op_pd = -Inf
+        global sol_kmc2pd.dqsol[end] = zeros(289)
+        global tstable_op_kmc2pd = -Inf
     finally
+        println("finally")
         global op_kmc2pds[id2idx[l]] = sol_kmc2pd.dqsol[end]
         global tstable_op_kmc2pds[id2idx[l]] = tstable_op_kmc2pd
     end
@@ -159,33 +163,33 @@ stable_lines_em = oklines[abs.(vec(op_stability_kmc2kmc)).<1e-5] # 127 lines
 unstable_lines_em = oklines[abs.(vec(op_stability_kmc2kmc)).>1e-5] # 7 lines
 
 # power dynamics
-stable_lines_pd = oklines[vec(tstable_op_kmc2pds).>0] # 129 lines
-unstable_lines_pd = oklines[vec(tstable_op_kmc2pds).<0] # 5 lines
+stable_lines_pd = oklines[vec(tstable_op_kmc2pds).>0] # 118 lines
+unstable_lines_pd = oklines[vec(tstable_op_kmc2pds).<0] # 16 lines
 
 # both
-stable_lines_both = oklines[(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).>0)] # 126 lines
-unstable_lines_both = oklines[(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).<0)] # 4 lines
-stable_em_unstable_pd = oklines[(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).<0)] # 1 lines
-unstable_em_stable_pd = oklines[(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).>0)] # 3 lines
+stable_lines_both = oklines[(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).>0)] # 118 lines
+unstable_lines_both = oklines[(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).<0)] # 7 lines
+stable_em_unstable_pd = oklines[(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).<0)] # 9 lines
+unstable_em_stable_pd = oklines[(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).>0)] # 0 lines
 
 # true/false postive/negative rates
-em_tpr_stable = length(stable_lines_both) / length(stable_lines_pd) # 98% = 126 / 129
-em_fnr_stable = length(unstable_em_stable_pd) / length(stable_lines_pd) # 2% = 3 / 129
-em_fpr_unstable = length(stable_em_unstable_pd) / length(unstable_lines_pd) # 20% = 1 / 5
-em_tpr_unstable = length(unstable_lines_both) / length(unstable_lines_pd) # 80% = 4 / 5
+em_tpr_stable = length(stable_lines_both) / length(stable_lines_pd) # 100% = 118 / 118
+em_fnr_stable = length(unstable_em_stable_pd) / length(stable_lines_pd) # 0% = 0 / 118
+em_fpr_unstable = length(stable_em_unstable_pd) / length(unstable_lines_pd) # 56% = 9 / 16
+em_tpr_unstable = length(unstable_lines_both) / length(unstable_lines_pd) # 44% = 7 / 16
 
 # overall stability pct
-stable_overall_pct_pd = length(stable_lines_pd) / length(oklines) # 96% = 129 / 134; PD-stable
+stable_overall_pct_pd = length(stable_lines_pd) / length(oklines) # 88% = 118 / 134; PD-stable
 stable_overall_pct_em = length(stable_lines_em) / length(oklines) # 95% = 127 / 134; EM-stable
 
 # timing stats (for PD-stable)
 maximum(tstable_op_kmc2pds) # 34.6s
 mean(tstable_op_kmc2pds[tstable_op_kmc2pds.>0]) # 27.4s
-std(tstable_op_kmc2pds[tstable_op_kmc2pds.>0]) # 3.1s
+std(tstable_op_kmc2pds[tstable_op_kmc2pds.>0]) # 3.2s
 
 # when didn't they find the same operating point?
 mask = abs.(op_diffs) .> 1e-5
-diff_lines__stable_em_stable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).>0)]
-diff_lines__unstable_em_stable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).>0)]
-diff_lines__stable_em_unstable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).<0)]
-diff_lines__unstable_em_unstable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).<0)]
+diff_lines__stable_em_stable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).>0)] # 0 lines
+diff_lines__unstable_em_stable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).>0)] # 0 lines
+diff_lines__stable_em_unstable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).<1e-5).*(vec(tstable_op_kmc2pds).<0)] # 9 lines
+diff_lines__unstable_em_unstable_pd = oklines[mask.*(abs.(vec(op_stability_kmc2kmc)).>1e-5).*(vec(tstable_op_kmc2pds).<0)] # 7 lines
